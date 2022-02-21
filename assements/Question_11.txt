@@ -1,0 +1,13 @@
+ What is the difference between a Set and a List
+ 1 )Insertion Order
+                In List insertion order is preserved ,where as in set insertion order is not preserved
+
+2) Duplicate
+     The list implementation allows us to add the same or duplicate elements.
+     But Set does not allow as to add same or duplicate elements
+
+3) Null value
+            List allows us to add any number of null values.Set allows us to add at least one null value in it.
+
+4) get() method
+            We can get the element of a specified index from the list using the get() method. but in Set We cannot find the element from the Set based on the index because it doesn't provide any get method().
