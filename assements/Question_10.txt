@@ -1,0 +1,12 @@
+
+What is the difference between Hashmap and LinkedHashmap?
+
+1. Order
+     HashMap doesn't maintain any order while LinkedHashMap maintains the insertion order of elements in Java.
+
+2. Memory Requirement
+LinkedHashMap also requires more memory than HashMap because of this ordering feature. LinkedHashMap uses doubly LinkedList to keep the order of elements.
+
+
+
+
