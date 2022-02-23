@@ -8,7 +8,9 @@ public class Question_2 {
     public static boolean isListContainSum(List<Integer> list, int expectedSum) {
         int size = list.size();
         for (int i = 0; i < size; i++) {
-            if (list.contains(expectedSum - list.get(i))) return true;
+            System.out.println(list.get(i));
+            int num = expectedSum - list.get(i);
+            if (list.contains(num) && list.indexOf(num) != i) return true;
         }
         return false;
 
