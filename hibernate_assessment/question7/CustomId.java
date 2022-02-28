@@ -22,8 +22,11 @@ public class CustomId implements StandardGenerator {
     @Override
     public Object generate(SharedSessionContractImplementor sharedSessionContractImplementor, Object o) throws HibernateException {
         Session session = Question_7.getSession();
-        Long nextId = session.createQuery("select count(*) from Product", Long.class).getSingleResult();
-
+        Integer nextId = session.createQuery("select max(id) from Product", Integer.class).getSingleResult();
+        if (nextId == null) {
+            nextId = 1;
+            return nextId;
+        }
         return (nextId.intValue() + 1);
     }
 }

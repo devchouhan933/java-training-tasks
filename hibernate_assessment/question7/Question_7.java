@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class Question_7 {
     public static void main(String[] args) {
         insert();
+        insert();
     }
 
     private static void insert() {
