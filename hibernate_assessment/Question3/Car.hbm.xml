@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+    <class name="Car" table="Car_">
+        <id name="id" type="int">
+
+            <column name="id"></column>
+            <generator class="increment"></generator>
+        </id>
+
+        <property name="name" column="name" type="string"/>
+        <property name="speed" column="speed" type="int"/>
+        <property name="cost" column="cost" type="int"/>
+    </class>
+</hibernate-mapping>
